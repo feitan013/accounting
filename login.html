@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body >
+    <!-- Whole form -->
+    <br>
+    <br>
+    <br>
+    
+    <div class="container1">
+      Username: Accounting
+      Password: 123
+
+    </div>
+    <br>
+   
+    <div class="container w3-card-4 w3-white">
+        <!-- Picture part -->
+        <div class="img-container">
+            <img src="acctng.png" alt="Diary Image">
+        </div>
+
+        <!-- Form part -->
+        <form action="main.html" method="POST">
+            <div class="form-container">
+                <!-- First label -->
+                <h2><center>Login </center></h2>
+
+                <!-- Username -->
+                <label for="uname">Username</label>
+                <input type="text" id="uname" name="username1" placeholder="Username" autocomplete="off" required>
+
+                <!-- Password -->
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="password1" placeholder="Password" autocomplete="off" required>
+
+                <!-- Remember me -->
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+
+                <!-- Submit -->
+                <input type="submit" id="lname" name="lastname" value="Login">
+
+                <!-- Line -->
+                <p class="with-line">or</p>
+
+                <!-- Social icons -->
+                <div class="social-icons">
+                    <a href="link address"><img src="https://img.icons8.com/color/1x/twitter.png"></a>
+                    <a href="link address"><img src="https://img.icons8.com/color/1x/facebook-new.png"></a>
+                </div>
+
+                <!-- Not registered yet -->
+            
+            </div>
+        </form>
+    </div>
+</body>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+  
+
+    .container {
+    display: flex;
+    width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Adding box shadow */
+}
+
+.container1 {
+    display: flex;
+    width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #A2E4B8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Adding box shadow */
+    font-size: 24px; /* Adjust the font size to your preference */
+}
+
+
+    .img-container {
+        flex: 40%; /* 40% for the image */
+    }
+
+    .img-container img {
+        width: 80%;
+        height: 100%;
+    }
+
+    .form-container {
+        flex: 90%; /* 60% for the form */
+        margin-right: 40px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 8px;
+        border: 1px solid #A2E4B8;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4baf78;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #BBAE97;
+    }
+
+    .with-line {
+        text-align: center;
+        margin: 20px 0;
+        position: relative;
+    }
+
+    .with-line:before,
+    .with-line:after {
+        content: "";
+        display: inline-block;
+        border-top: 1px solid #000;
+        width: 8em;
+        vertical-align: middle;
+        margin: 0 0.5em;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
+</style>
+</html>
