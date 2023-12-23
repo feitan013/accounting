@@ -32,19 +32,20 @@
 
                 <!-- Username -->
                 <label for="uname">Username</label>
-                <input type="text" id="uname" name="username1" placeholder="Username" autocomplete="off" required>
+                <input type="text" placeholder="Username" autocomplete="off" required>
 
                 <!-- Password -->
                 <label for="pass">Password</label>
-                <input type="password" id="pass" name="password1" placeholder="Password" autocomplete="off" required>
+                <input type="password"   placeholder="Password" autocomplete="off" required>
 
                 <!-- Remember me -->
                 <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <input type="checkbox" checked="checked" > Remember me
                 </label>
 
                 <!-- Submit -->
-                <input type="submit" id="lname" name="lastname" value="Login">
+                <button  class="button">Login</button>
+
 
                 <!-- Line -->
                 <p class="with-line">or</p>
@@ -125,7 +126,7 @@
         box-sizing: border-box;
     }
 
-    input[type="submit"] {
+    .button{
         width: 100%;
         background-color: #4baf78;
         color: white;
@@ -136,9 +137,7 @@
         cursor: pointer;
     }
 
-    input[type="submit"]:hover {
-        background-color: #BBAE97;
-    }
+
 
     .with-line {
         text-align: center;
